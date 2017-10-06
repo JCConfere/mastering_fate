@@ -1,0 +1,75 @@
+body {
+  font-family: cursive;
+  margin: 0;
+  text-align: center;
+  background-color: black;
+  color: whitesmoke;
+}
+
+
+
+.mainTitle {
+  font-size: 35px;
+}
+
+.input-group-addon {
+  background-color: black;
+
+}
+
+.form-control {
+  text-align: center;
+  align-content: center;
+  background-color: black;
+  color: whitesmoke;
+}
+
+.highlight {
+  font-weight: 500;
+  color: whitesmoke;
+  font-family: sans-serif;
+}
+
+portrait {
+  align-content: stretch;
+}
+
+.level {
+  padding-bottom: 25px;
+}
+
+tr {
+  align-content: center;
+}
+
+.spell-school {
+  text-align: center;
+}
+
+.holder {
+  background-color: wheat;
+  height: 50px;
+}
+
+.holder2 {
+  background-color: blue;
+  height: 50px;
+}
+
+.compact {
+  height: 500px;
+}
+
+.compact1 {
+  height: 500px;
+  overflow-y:  auto;
+}
+
+.buffer {
+  margin-bottom: 65px;
+}
+/* this is css strictly for index-v1.html */
+
+.inline {
+  display: inline-block;
+}

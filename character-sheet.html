@@ -1,0 +1,1062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+  <link rel="stylesheet" href="main.css">
+
+
+
+
+  <script type="text/javascript" src="reams.js"></script>
+  <body>
+
+    <div class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand navigate" href="#">your name here</a>
+        </div>
+
+        <div class="navbar-collapse collapse">
+
+          <ul class="nav navbar-nav navbar-right">
+
+            <!-- <li class="active"> will highlight button -->
+
+            <li><a href="kgp.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="#">Rates</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+
+        </div>
+          <!--/nav-collapse -->
+      </div>
+    </div>
+  <!-- /static navbar -->
+
+  <div class="container-fluid">
+    <ul class="nav nav-tabs">
+      <li role="presentation"><a href="index.html" id="home">Home</a></li>
+      <li role="presentation">
+        <div class="dropdown">
+          <button class="btn btn-link dropdown-toggle" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
+              Player
+              <span class="caret"></span>
+            </button>
+          <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
+            <li><a href="player.html">Character Sheet</a></li>
+            <li><a href="playerpg2.html">Feats, Abilities, and Spells</a></li>
+          </ul>
+        </div>
+      </li>
+      <li role="presentation"><a href="encounters.html">Encounters</a></li>
+      <li role="presentation"><a href=" ">Treasure</a></li>
+      <li role="presentation"><a href=" ">Misc</a></li>
+      <li role="presentation"><a href=" ">Notes</a></li>
+    </ul>
+  </div>
+
+
+
+    <div class="row row1">
+      <div class="col-xs-12 title">
+        <p class="mainTitle">Mastering Fate</p>
+        <hr>
+      </div>
+    </div>
+    <!-- /.row1 -->
+
+
+    <div class="row row2">
+
+
+      <div class="col-md-4">
+        <h3><a href="#profile" role="button" id="toggleProfile">Profile</a></h3>
+        <form class="profile">
+          <div class="input-group">
+            <span class="input-group-addon"><span class="highlight">Character Name:</span></span>
+            <input type="text" class="form-control" id="charName">
+          </div>
+          <img src="https://s19.postimg.org/57awcqqur/Rogue.jpg" class="img-fluid portrait" alt="Responsive image">
+
+          <div class="input-group level">
+            <span class="input-group-addon"><span class="highlight">Level:</span></span>
+            <input type="text" class="form-control" id="level">
+          </div>
+        </form>
+      </div>
+
+
+      <div class="col-md-8">
+        <h3><a href="#toggleTraits" role="button" id="toggleTraits1">Traits</a></h3>
+        <div class="row subrow traits1">
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon"><span class="highlight">Class:</span></span>
+                <input type="text" class="form-control" id="class" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">Race:</span></span>
+                <input type="text" class="form-control" id="race" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">Size:</span></span>
+                <input type="text" class="form-control" id="size" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">Height:</span></span>
+                <input type="text" class="form-control" id="height" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon" id="fname"><span class="highlight">Deity:</span></span>
+                <input type="text" class="form-control" id="deity" />
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6">
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon" id=" "><span class="highlight">XP:</span></span>
+                <input type="text" class="form-control" id="xp" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon" id=" "><span class="highlight">Alignment:</span></span>
+                <input type="text" class="form-control" id="align" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon" id=" "><span class="highlight">Age:</span></span>
+                <input type="text" class="form-control" id="age" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon" id=" "><span class="highlight">Weight:</span></span>
+                <input type="text" class="form-control" id="weight" />
+              </div>
+            </div>
+            <div class="form-group">
+              <div class="input-group">
+                <span class="input-group-addon" id=" "><span class="highlight">Speed:</span></span>
+                <input type="text" class="form-control" id="speed" />
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+        <!-- /.subrow -->
+
+      </div>
+      <!-- /.col-md-8 -->
+
+
+    </div>
+    <!-- /.row 2 -->
+
+    <div class="row row3">
+      <div class="col-md-4">
+        <h3><a href="#toggleAttributes" role="button" id="toggleAttributes">Attributes</a></h3>
+        <form class="attributes">
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=" "><span class="highlight">Str:</span></span>
+              <input type="text" class="form-control" id="str" />
+              <span class="input-group-addon" id=" "><span class="highlight">Mod:</span></span>
+              <input type="text" class="form-control" id="str-mod" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=" "><span class="highlight">Con:</span></span>
+              <input type="text" class="form-control" id="con" />
+              <span class="input-group-addon" id=" "><span class="highlight">Mod:</span></span>
+              <input type="text" class="form-control" id="con-mod" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=" "><span class="highlight">Dex:</span></span>
+              <input type="text" class="form-control" id="dex" />
+              <span class="input-group-addon" id=" "><span class="highlight">Mod:</span></span>
+              <input type="text" class="form-control" id="dex-mod" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=" "><span class="highlight">Int:</span></span>
+              <input type="text" class="form-control" id="int" />
+              <span class="input-group-addon" id=" "><span class="highlight">Mod:</span></span>
+              <input type="text" class="form-control" id="int-mod" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=" "><span class="highlight">Wis:</span></span>
+              <input type="text" class="form-control" id="wis" />
+              <span class="input-group-addon" id=" "><span class="highlight">Mod:</span></span>
+              <input type="text" class="form-control" id="wis-mod" />
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=" "><span class="highlight">Cha:</span></span>
+              <input type="text" class="form-control" id="cha" />
+              <span class="input-group-addon" id=" "><span class="highlight">Mod:</span></span>
+              <input type="text" class="form-control" id="cha-mod" />
+            </div>
+          </div>
+        </form>
+      </div>
+
+      <div class="col-md-8">
+        <h3><a href="#hpAndCon" role="button" id="toggleHpAndCon">Hit Points and Condition</a></h3>
+        <form class="hpAndCon">
+          <div class="row hp-subrow">
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id=" "><span class="highlight">Hit Points:</span></span>
+                  <input type="text" class="form-control" id="hp" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id=" "><span class="highlight">Wounds:</span></span>
+                  <input type="text" class="form-control" id="currentHP" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id=" "><span class="highlight">Non-lethal Damage:</span></span>
+                  <input type="text" class="form-control" id="non-lethal" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id=" "><span class="highlight">Reduction:</span></span>
+                  <input type="text" class="form-control" id="damage-reduction" />
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- /.hp-subrow -->
+        </form>
+
+        <h3><a href="#armorClass" role="button" id="toggleArmorClass">Armor Class</a></h3>
+
+        <form class="armorClass">
+          <div class="row ac-subrow">
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id=" "><span class="highlight">Armor Class:</span></span>
+                  <input type="text" class="form-control" id="ac" />
+                  <span class="input-group-addon" id=" "><span class="highlight">Armor:</span></span>
+                  <input type="text" class="form-control" id="armor-bonus" />
+                  <span class="input-group-addon" id=" "><span class="highlight">Shield:</span></span>
+                  <input type="text" class="form-control" id="shield-bonus" />
+                  <span class="input-group-addon" id=" "><span class="highlight">Dex:</span></span>
+                  <input type="text" class="form-control" id="ac-dex-mod" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-12">
+              <div class="form-group">
+                <div class="input-group">
+
+                  <span class="input-group-addon" id=" "><span class="highlight">Size:</span></span>
+                  <input type="text" class="form-control" id="size-mod" />
+                  <span class="input-group-addon" id=" "><span class="highlight">Natural:</span></span>
+                  <input type="text" class="form-control" id="natural-armor" />
+                  <span class="input-group-addon" id=" "><span class="highlight">Deflect:</span></span>
+                  <input type="text" class="form-control" id="deflection" />
+                  <span class="input-group-addon" id=" "><span class="highlight">Misc:</span></span>
+                  <input type="text" class="form-control" id="ac-misc" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id=" "><span class="highlight">AC Touch:</span></span>
+                  <input type="text" class="form-control" id="damage-reducttion" />
+                </div>
+              </div>
+            </div>
+
+            <div class="col-md-6">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id=" "><span class="highlight">AC Flat Footed:</span></span>
+                  <input type="text" class="form-control" id="flat-footed" />
+                </div>
+              </div>
+            </div>
+
+
+          </div>
+          <!-- /.ac-subrow -->
+
+        </form>
+      </div>
+      <!-- /col-md-8 -->
+    </div>
+    <!-- /.row3 -->
+
+    <div class="row row4">
+      <div class="col-md-4">
+        <h3><a href="#combat" role="button" id="toggleCombat">Combat</a></h3>
+        <form class="combat">
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=" "><span class="highlight">Initiative:</span></span>
+              <input type="text" class="form-control" id="init" />
+              <span class="input-group-addon" id=" "><span class="highlight">Dex Mod:</span></span>
+              <input type="text" class="form-control" id="init-dex-mod" />
+              <span class="input-group-addon" id=" "><span class="highlight">Misc Mod:</span></span>
+              <input type="text" class="form-control" id="init-misc-mod" />
+            </div>
+          </div>
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=""><span class="highlight">Base Attack Bonus:</span></span>
+              <input type="text" class="form-control" id="base-attack-bonus" />
+              <span class="input-group-addon" id=""><span class="highlight">Spell Resistance:</span></span>
+              <input type="text" class="form-control" id="grapple" />
+            </div>
+          </div>
+        </form>
+        <h3><a href="#grapple" role="button" id="toggleGrapple">Grapple</a></h3>
+        <form class="grapple">
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=""><span class="highlight">Grapple:</span></span>
+              <input type="text" class="form-control" id="grapple" />
+              <span class="input-group-addon" id=""><span class="highlight">Base Attk:</span></span>
+              <input type="text" class="form-control" id="grapple-base-attack" />
+              <span class="input-group-addon" id=""><span class="highlight">Str Mod:</span></span>
+              <input type="text" class="form-control" id="grapple-str-mod" />
+
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=""><span class="highlight">Size Mod:</span></span>
+              <input type="text" class="form-control" id="grapple-size-mod" />
+              <span class="input-group-addon" id=""><span class="highlight">Misc Mod</span></span>
+              <input type="text" class="form-control" id="grapple-misc-mod" />
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+      <div class="col-md-8">
+        <h3><a href="#savingThrows" role="button" id="toggleSavingThrows">Saving Throws</a></h3>
+        <form class="savingThrows">
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=" "><span class="highlight">Fortitude:<sub>(Con)</sub></span></span>
+              <input type="text" class="form-control" id="fort" />
+              <span class="input-group-addon" id=" "><span class="highlight">Base:</span></span>
+              <input type="text" class="form-control" id="fort-base" />
+              <span class="input-group-addon" id=" "><span class="highlight">Ability Mod:</span></span>
+              <input type="text" class="form-control" id="fort-abil-mod" />
+            </div>
+          </div>
+
+          <div class="row sub-row-save1">
+            <div class="col-md-11 col-md-offset-1">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id=" "><span class="highlight">Magic Mod:</span></span>
+                  <input type="text" class="form-control" id="fort-magic-mod" />
+                  <span class="input-group-addon" id=" "><span class="highlight">Temp Mod:</span></span>
+                  <input type="text" class="form-control" id="fort-temp-mod" />
+                  <span class="input-group-addon" id=" "><span class="highlight">Conditional Mod:</span></span>
+                  <input type="text" class="form-control" id="fort-cond-mod" />
+
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=""><span class="highlight">Reflex:<sub>(Dex)</sub></span></span>
+              <input type="text" class="form-control" id="reflex" />
+              <span class="input-group-addon" id=""><span class="highlight">Base:</span></span>
+              <input type="text" class="form-control" id="reflex-base" />
+              <span class="input-group-addon" id=""><span class="highlight">Ability Mod:</span></span>
+              <input type="text" class="form-control" id="reflex-abil-mod" />
+            </div>
+          </div>
+          <div class="row sub-row-save2">
+            <div class="col-md-11 col-md-offset-1">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">Magic Mod:</span></span>
+                  <input type="text" class="form-control" id="relfex-magic-mod" />
+                  <span class="input-group-addon" id=""><span class="highlight">Temp Mod:</span></span>
+                  <input type="text" class="form-control" id="reflex-temp-mod" />
+                  <span class="input-group-addon" id=""><span class="highlight">Conditional Mod:</span></span>
+                  <input type="text" class="form-control" id="reflex-cond-mod" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id=""><span class="highlight">Will:<sub>(Wis)</sub></span></span>
+              <input type="text" class="form-control" id="will" />
+              <span class="input-group-addon" id=""><span class="highlight">Base:</span></span>
+              <input type="text" class="form-control" id="will-base" />
+              <span class="input-group-addon" id=""><span class="highlight">Ability Mod:</span></span>
+              <input type="text" class="form-control" id="will-abil-mod" />
+
+            </div>
+          </div>
+          <div class="row sub-row-save3">
+            <div class="col-md-11 col-md-offset-1">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">Magic Mod:</span></span>
+                  <input type="text" class="form-control" id="will-magic-mod" />
+                  <span class="input-group-addon" id=""><span class="highlight">Temp Mod:</span></span>
+                  <input type="text" class="form-control" id="will-temp-mod" />
+                  <span class="input-group-addon" id=""><span class="highlight">Conditional Mod:</span></span>
+                  <input type="text" class="form-control" id="will-cond-mod" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </form>
+      </div>
+
+
+    </div>
+    <!-- /.row4 -->
+
+    <div class="row row5">
+      <div class="col-md-6">
+        <h3><a href="#gear" role="button" id="toggleGear">Gear</a></h3>
+        <form class="gear">
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id="1"><span class="highlight">Armor:</span></span>
+              <input type="text" class="form-control" id="armor" />
+              <span class="input-group-addon" id="1"><span class="highlight">Type:</span></span>
+              <input type="text" class="form-control" id="armor-type" />
+              <span class="input-group-addon" id="1"><span class="highlight">AC Bonus:</span></span>
+              <input type="text" class="form-control" id="armor-ac-bonus" />
+              <span class="input-group-addon" id="1"><span class="highlight">Max Dex:</span></span>
+              <input type="text" class="form-control" id="armor-max-dex" />
+            </div>
+          </div>
+          <div class="row sub-row-gear-armor">
+            <div class="col-xs-11 col-xs-offset-1">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id="1"><span class="highlight">Check Penalty:</span></span>
+                  <input type="text" class="form-control" id="armor-chk-penalty" />
+                  <span class="input-group-addon" id="1"><span class="highlight">Spell Failure:</span></span>
+                  <input type="text" class="form-control" id="armor-spell-fail" />
+                  <span class="input-group-addon" id="1"><span class="highlight">Speed:</span></span>
+                  <input type="text" class="form-control" id="armor-speed" />
+
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-11 col-xs-offset-1">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id="1"><span class="highlight">Weight:</span></span>
+                  <input type="text" class="form-control" id="armor-weight" />
+                  <span class="input-group-addon" id="1"><span class="highlight">Special Properties:</span></span>
+                  <input type="text" class="form-control" id="armor-spec-prop" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id="1"><span class="highlight">Shield:</span></span>
+              <input type="text" class="form-control" id="shield" />
+              <span class="input-group-addon" id="1"><span class="highlight">AC Bonus:</span></span>
+              <input type="text" class="form-control" id="shield-ac-bonus" />
+              <span class="input-group-addon" id="1"><span class="highlight">Weight:</span></span>
+              <input type="text" class="form-control" id="shield-weight" />
+              <span class="input-group-addon" id="1"><span class="highlight">Check Penalty:</span></span>
+              <input type="text" class="form-control" id="shield-chk-penalty" />
+
+            </div>
+          </div>
+          <div class="row sub-row-shield">
+            <div class="col-xs-11 col-xs-offset-1">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id="1"><span class="highlight">Spell Failure:</span></span>
+                  <input type="text" class="form-control" id="shield-spell-fail" />
+                  <span class="input-group-addon" id="1"><span class="highlight">Special Properties:</span></span>
+                  <input type="text" class="form-control" id="shield-spec-prop" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id="1"><span class="highlight">Protective Item:</span></span>
+              <input type="text" class="form-control" id="protective-item-1" />
+              <span class="input-group-addon" id="1"><span class="highlight">AC Bonus:</span></span>
+              <input type="text" class="form-control" id="protective-item-1-ac-bonus" />
+              <span class="input-group-addon" id="1"><span class="highlight">Weight:</span></span>
+              <input type="text" class="form-control" id="protective-item-1-weight" />
+
+            </div>
+          </div>
+
+          <div class="row sub-row-protective-item-1">
+            <div class="col-xs-11 col-xs-offset-1">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id="1"><span class="highlight">Special Properties:</span></span>
+                  <input type="text" class="form-control" id="protective-item-1-spec-prop" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="form-group">
+            <div class="input-group">
+              <span class="input-group-addon" id="1"><span class="highlight">Protective Item:</span></span>
+              <input type="text" class="form-control" id="protective-item-2" />
+              <span class="input-group-addon" id="1"><span class="highlight">AC Bonus:</span></span>
+              <input type="text" class="form-control" id="protective-item-2-ac-bonus" />
+              <span class="input-group-addon" id="1"><span class="highlight">Weight:</span></span>
+              <input type="text" class="form-control" id="protective-item-2-weight" />
+
+            </div>
+          </div>
+          <div class="row sub-row-protective-item-1">
+            <div class="col-xs-11 col-xs-offset-1">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id="1"><span class="highlight">Special Properties:</span></span>
+                  <input type="text" class="form-control" id="protective-item-2-spec-prop" />
+                </div>
+              </div>
+            </div>
+          </div>
+        </form>
+
+        <div class="row sub-row-money">
+          <div class="col-md-6">
+            <h3><a href="#money" role="button" id="toggleMoney">Money</a></h3>
+            <form class="money">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id="1"><span class="highlight">Copper Pieces:</span></span>
+                  <input type="text" class="form-control" id="copper" />
+                  <span class="input-group-addon" id="1"><span class="highlight">Silver Pieces:</span></span>
+                  <input type="text" class="form-control" id="silver" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id="1"><span class="highlight">Gold Pieces:</span></span>
+                  <input type="text" class="form-control" id="gold" />
+                  <span class="input-group-addon" id="1"><span class="highlight">Platinum Pieces:</span></span>
+                  <input type="text" class="form-control" id="platinum" />
+                </div>
+              </div>
+            </form>
+          </div>
+
+          <div class="col-md-6">
+            <h3><a href="#languages" role="button" id="toggleLanguages">Languages</a></h3>
+            <form class="languages">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <input type="text" class="form-control" id="lang1" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <input type="text" class="form-control" id="lang2" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <input type="text" class="form-control" id="lang3" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <input type="text" class="form-control" id="lang4" />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon"></span>
+                  <input type="text" class="form-control" id="lang5" />
+                </div>
+              </div>
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+      <!-- /.gear -->
+
+      <div class="col-md-6">
+        <h3><a href="#equipment" role="button" id="toggleEquipment">Equipment</a></h3>
+        <table class="table table-bordered table-condensed equipment">
+
+
+          <thead>
+            <tr>
+              <th>Item:</th>
+              <th>Weight:</th>
+              <th>Item:</th>
+              <th>Weight:</th>
+
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item1" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item1-wt" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item2" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item2-wt" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item3" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item3-wt" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item4" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item4-wt" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item5" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item5-wt" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item6" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item6-wt" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item7" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item7-wt" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item8" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item8-wt" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item9" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item9-wt" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item10" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item10-wt" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item11" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item11-wt" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item12" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item12-wt" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item114" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item114-wt" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item14" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item14-wt" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item15" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item15-wt" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item16" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item16-wt" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item17" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item17-wt" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item18" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item18-wt" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item19" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item19-wt" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item20" />
+                  </div>
+                </div>
+              </td>
+              <td>
+                <div class="form-group">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="item20-wt" />
+                  </div>
+                </div>
+              </td>
+            </tr>
+          </tbody>
+
+        </table>
+
+        <div class="row subrow-encumber">
+          <div class="col-md-12">
+            <h3><a href="#carry" role="button" id="toggleCarry">Carry</a></h3>
+            <form class="carry">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id="1"><span class="highlight">Total Weight Carried:</span></span>
+                  <input type="text" class="form-control" id="total-weight-carried" />
+                </div>
+              </div>
+
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id="1"><span class="highlight">Light Load:</span></span>
+                  <input type="text" class="form-control" id="light-load" />
+                  <span class="input-group-addon" id="1"><span class="highlight">Medium Load:</span></span>
+                  <input type="text" class="form-control" id="medium-load" />
+                  <span class="input-group-addon" id="1"><span class="highlight">Heavy Load:</span></span>
+                  <input type="text" class="form-control" id="heavy-load" />
+                </div>
+              </div>
+            </form>
+
+            <h3><a href="#lift" role="button" id="toggleLift">Lift</a></h3>
+
+            <form class="lift">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id="1"><span class="highlight">Lift Over Head:<sup>*</sup></span></span>
+                  <input type="text" class="form-control" id="lift-over-head" />
+                  <span class="input-group-addon" id="1"><span class="highlight">Lift Off Ground:<sup>**</sup></span></span>
+                  <input type="text" class="form-control" id="lift-off-ground" />
+                  <span class="input-group-addon" id="1"><span class="highlight">Push or Drag:<sup>***</sup></span></span>
+                  <input type="text" class="form-control" id="push-drag" />
+                </div>
+              </div>
+              <p>* Equal to Max Load</p>
+              <p>** 2x Max Load</p>
+              <p>*** 3x Max Load</p>
+            </form>
+          </div>
+
+        </div>
+
+
+      </div>
+      <!-- /.row5 -->
+
+
+    </div>
+    <!-- /.container-fluid ==>
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>

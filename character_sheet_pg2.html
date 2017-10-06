@@ -1,0 +1,2062 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title></title>
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css">
+
+  <link rel="stylesheet" href="main.css">
+
+  <script type="text/javascript" src="char_pg2.js"></script>
+
+  <body>
+    <div class="navbar navbar-inverse">
+    <div class="container">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+        <a class="navbar-brand navigate" href="#">your name here</a>
+      </div>
+
+      <div class="navbar-collapse collapse">
+
+        <ul class="nav navbar-nav navbar-right">
+
+          <!-- <li class="active"> will highlight button -->
+
+          <li><a href="kgp.html">Home</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="#">Rates</a></li>
+          <li><a href="#">Contact</a></li>
+        </ul>
+
+      </div>
+      <!--/nav-collapse -->
+    </div>
+  </div>
+  <!-- /static navbar -->
+
+  <div class="container">
+    <div class="row row1">
+      <div class="col-md-6 compact1">
+        <h3><a href="#skills" role="button" id="toggleSkills">Skills</a></h3>
+        <table class="skills">
+          <caption></caption>
+
+          <thead>
+            <tr>
+              <th>Skill Name:</th>
+              <th>Key Ability:</th>
+              <th>Skill Mod:</th>
+              <th>Ability Mod:</th>
+              <th>Ranks</th>
+              <th>Misc Mod:</th>
+            </tr>
+          </thead>
+
+          <tbody>
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Appraise:
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-app" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-app-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-app-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-app-misc" />
+                </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Balance:
+                </div>
+              </td>
+              <td>Dex<sup>*</sup></td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-bal" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-bal-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-bal-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-bal-misc" />
+                </div>
+              </td>
+            </tr>
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Bluff:
+                </div>
+              </td>
+              <td>Cha</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-bluff" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-bluff-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-bluff-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-bluff-misc" /> </div>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Climb:
+                </div>
+              </td>
+              <td>Str<sup>*</sup></td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-climb" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-climb-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-climb-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-climb-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Concentration:
+                </div>
+              </td>
+              <td>Con</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-concentrate" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-concentrate-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-concentrate-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-concentrate-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Craft:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="craft1" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft1" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft1-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft1-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft1-misc" />
+                </div>
+              </td>
+
+            </tr>
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Craft:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="craft2" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft2" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft2-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft2-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft2-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Craft:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="craft3" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft3" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft3-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft3-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-craft3-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Decipher Script:
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-decipher" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-decipher-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-decipher-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-decipher-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Diplomacy:
+                </div>
+              </td>
+              <td>Cha</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-diplo" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-diplo-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-diplo-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-diplo-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Disable Device:
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-disable" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-disable-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-disable-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-disable-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Disguise:
+                </div>
+              </td>
+              <td>Cha</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-disguise" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-disguise-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-disguise-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-disguise-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Escape Artist:
+                </div>
+              </td>
+              <td>Dex<sup>*</sup></td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-escape" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-escape-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-escape-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-escape-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Forgery:
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-forgery" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-forgery-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-forgery-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-forgery-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Gather Information:
+                </div>
+              </td>
+              <td>Cha</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-gather-info" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-gather-info-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-gather-info-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-gather-info-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Handle Animal:
+                </div>
+              </td>
+              <td>Cha</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-animal" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-animal-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-animal-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-animal-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Heal:
+                </div>
+              </td>
+              <td>Wis</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-heal" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-heal-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-heal-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-heal-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Hide:
+                </div>
+              </td>
+              <td>Dex<sup>*</sup></td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-hide" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-hide-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-hide-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-hide-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Intimidate:
+                </div>
+              </td>
+              <td>Cha</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-intimidate" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-intimidate-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-intimidate-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-intimidate-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Jump:
+                </div>
+              </td>
+              <td>Str<sup>*</sup></td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-jump" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-jump-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-jump-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-jump-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Knowledge:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="know1" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know1" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know1-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know1-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know1-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Knowledge:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="know2" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know2" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know2-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know2-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know2-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Knowledge:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="know3" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know3" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know3-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know3-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know3-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Knowledge:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="know4" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know4" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know4-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know4-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know4-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Knowledge:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="know5" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know5" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know5-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know5-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-know5-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Listen:
+                </div>
+              </td>
+              <td>Wis</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-listen" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-listen-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-listen-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-listen-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Move Silently:
+                </div>
+              </td>
+              <td>Dex<sup>*</sup></td>
+
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-move-silently" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-move-silently-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-move-silently-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-move-silently-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Open Lock:
+                </div>
+              </td>
+              <td>Dex</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-lockpick" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-lockpick-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-lockpick-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-lockpick-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Perform:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="perform1" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Cha</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform1" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform1-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform1-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform1-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Perform:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="perform2" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Cha</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform2" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform2-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform2-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform2-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Perform:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="perform3" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Cha</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform3" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform3-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform3-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-perform3-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Profession:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="profession1" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Wis</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-profession1" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-profession1-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-profession1-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-profession1-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Profession:
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="profession2" />
+                  </div>
+
+                </div>
+              </td>
+              <td>Wis</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-profession2" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-profession2-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-profession2-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-profession2-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Ride:
+                </div>
+              </td>
+              <td>Dex</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-ride" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-ride-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-ride-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-ride-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Search:
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-search" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-search-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-search-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-search-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Sense Motive:
+                </div>
+              </td>
+              <td>Wis</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-motive" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-motive-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-motive-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-motive-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Sleight of Hand:
+                </div>
+              </td>
+              <td>Dex<sup>*</sup></td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-sleight" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-sleight-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-sleight-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-sleight-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Spellcraft:
+                </div>
+              </td>
+              <td>Int</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-spellcraft" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-spellcraft-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-spellcraft-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-spellcraft-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Spot:
+                </div>
+              </td>
+              <td>Wis</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-spot" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-spot-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-spot-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-spot-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Survival:
+                </div>
+              </td>
+              <td>Wis</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-survival" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-survival-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-survival-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-survival-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Swim:
+                </div>
+              </td>
+              <td>Str<sup>*</sup></td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-swim" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-swim-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-swim-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-swim-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Tumble:
+                </div>
+              </td>
+              <td>Dex<sup>*</sup></td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-tumble" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-tumble-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-tumble-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-tumble-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Use Magic Device:
+                </div>
+              </td>
+              <td>Cha</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-use-mag-dev" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-use-mag-dev-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-use-mag-dev-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-use-mag-dev-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">Use Rope:
+                </div>
+              </td>
+              <td>Dex</td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-rope" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-rope-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-rope-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-rope-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="blank1" />
+                  </div>
+
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="blank-att1" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank1" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank1-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank1-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank1-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="blank2" />
+                  </div>
+
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="blank-att2" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank2" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank2-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank2-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank2-misc" />
+                </div>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="text-align: left">
+                <div class="checkbox">
+
+                  <input type="checkbox">
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="blank3" />
+                  </div>
+
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="blank-att3" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank3" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank3-abil" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank3-rank" />
+                </div>
+              </td>
+              <td>
+                <div class="input-group">
+                  <input type="text" class="form-control" id="skill-blank3-misc" />
+                </div>
+              </td>
+
+            </tr>
+          </tbody>
+
+          <p>
+            <div class="checkbox">
+
+              <input type="checkbox">Click the Checkbox to Highlight a Class Skill
+            </div>
+          </p>
+          <p><sup>+</sup> Denotes a Skill That Can Be Used Untrained</p>
+          <p><sup>*</sup> Armor Check Penalty if Applicable (Double Penalty for Swim)</p>
+        </table>
+      </div>
+      <!-- /.skills -->
+
+      <div class="col-md-6 compact">
+        <div class="row subrow1">
+          <div class="col-md-6">
+            <h3><a href="#feats" role="button" id="toggleFeats">Feats</a></h3>
+            <form class="feats">
+              <div class="form-group">
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">1</span></span>
+                  <input type="text" class="form-control" id="feat1" />
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">2</span></span>
+                  <input type="text" class="form-control" id="feat2" />
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">3</span></span>
+                  <input type="text" class="form-control" id="feat3" />
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">4</span></span>
+                  <input type="text" class="form-control" id="feat4" />
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">5</span></span>
+                  <input type="text" class="form-control" id="feat5" />
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">6</span></span>
+                  <input type="text" class="form-control" id="feat6" />
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">7</span></span>
+                  <input type="text" class="form-control" id="feat7" />
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">8</span></span>
+                  <input type="text" class="form-control" id="feat8" />
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">9</span></span>
+                  <input type="text" class="form-control" id="feat9" />
+                </div>
+                <div class="input-group">
+                  <span class="input-group-addon" id=""><span class="highlight">10</span></span>
+                  <input type="text" class="form-control" id="feat10" />
+                </div>
+              </div>
+            </form>
+          </div>
+          <!-- /col-md-3 feats -->
+
+          <div class="col-md-6 compact">
+            <h3><a href="#specialAbilities" role="button" id="toggleSpecialAbilities"</a>Special Abilities</h3>
+            <form class="specialAbilities">
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">1</span></span>
+                <input type="text" class="form-control" id="spec-abil1" />
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">2</span></span>
+                <input type="text" class="form-control" id="spec-abil2" />
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">3</span></span>
+                <input type="text" class="form-control" id="spec-abil3" />
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">4</span></span>
+                <input type="text" class="form-control" id="spec-abil4" />
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">5</span></span>
+                <input type="text" class="form-control" id="spec-abil5" />
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">6</span></span>
+                <input type="text" class="form-control" id="spec-abil6" />
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">7</span></span>
+                <input type="text" class="form-control" id="spec-abil7" />
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">8</span></span>
+                <input type="text" class="form-control" id="spec-abil8" />
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">9</span></span>
+                <input type="text" class="form-control" id="spec-abil9" />
+              </div>
+              <div class="input-group">
+                <span class="input-group-addon" id=""><span class="highlight">10</span></span>
+                <input type="text" class="form-control" id="spec-abil10" />
+              </div>
+          </div>
+          </form>
+
+        </div>
+        <!-- /col-md-6 -->
+      </div>
+      <!-- /.subrow1 -->
+
+      <div class="row subrow2">
+        <div class="col-md-6">
+          <h3 class="buffer"><a href="#spells" role="button" id="toggleSpells">Spells</a></h3>
+          <form class="spells">
+            <div class="input-group">
+              <span class="input-group-addon" id="domain">Domain/Specialty School:</span>
+              <input type="text" class="form-control" id="domainName" />
+            </div>
+          </form>
+
+          <h4><a href="#zero" role="button" id="toggleZero">Zero Level Spells:</a></h4>
+          <form class="zero">
+            <div class="input-group">
+              <span class="input-group-addon">1:</span>
+              <input type="text" class="form-control" id="spellZero1" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">2:</span>
+              <input type="text" class="form-control" id="spellZero2" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">3:</span>
+              <input type="text" class="form-control" id="spellZero3" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">4:</span>
+              <input type="text" class="form-control" id="spellZero4" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">5:</span>
+              <input type="text" class="form-control" id="spellZero5" />
+            </div>
+          </form>
+          <h4><a href="#first" role="button" id="toggleFirst">First Level Spells:</a></h4>
+          <form class="first">
+            <div class="input-group">
+              <span class="input-group-addon">1:</span>
+              <input type="text" class="form-control" id="spellOne1" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">2:</span>
+              <input type="text" class="form-control" id="spellOne2" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">3:</span>
+              <input type="text" class="form-control" id="spellOne3" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">4:</span>
+              <input type="text" class="form-control" id="spellOne4" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">5:</span>
+              <input type="text" class="form-control" id="spellOne5" />
+            </div>
+          </form>
+          <h4><a href="#second" role="button" id="toggleSecond">Second Level Spells:</a></h4>
+          <form class="second">
+            <div class="input-group">
+              <span class="input-group-addon">1:</span>
+              <input type="text" class="form-control" id="spellTwo1" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">2:</span>
+              <input type="text" class="form-control" id="spellTwo2" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">3:</span>
+              <input type="text" class="form-control" id="spellTwo3" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">4:</span>
+              <input type="text" class="form-control" id="spellTwo4" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">5:</span>
+              <input type="text" class="form-control" id="spellTwo5" />
+            </div>
+          </form>
+          <h4><a href="#third" role="button" id="toggleThird">Third Level Spells:</a></h4>
+          <form class="third">
+            <div class="input-group">
+              <span class="input-group-addon">1:</span>
+              <input type="text" class="form-control" id="spellThree1" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">2:</span>
+              <input type="text" class="form-control" id="spellThree2" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">3:</span>
+              <input type="text" class="form-control" id="spellThree3" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">4:</span>
+              <input type="text" class="form-control" id="spellThree4" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">5:</span>
+              <input type="text" class="form-control" id="spellThree5" />
+            </div>
+          </form>
+          <h4><a href="#fourth" role="button" id="toggleFourth">Fourth Level Spells:</a></h4>
+          <form class="fourth">
+            <div class="input-group">
+              <span class="input-group-addon">1:</span>
+              <input type="text" class="form-control" id="spellFour1" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">2:</span>
+              <input type="text" class="form-control" id="spellFour2" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">3:</span>
+              <input type="text" class="form-control" id="spellFour3" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">4:</span>
+              <input type="text" class="form-control" id="spellFour4" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">5:</span>
+              <input type="text" class="form-control" id="spellFour5" />
+            </div>
+          </form>
+          <h4><a href="#fifth" role="button" id="toggleFifth">Fifth Level Spells:</a></h4>
+          <form class="fifth">
+            <div class="input-group">
+              <span class="input-group-addon">1:</span>
+              <input type="text" class="form-control" id="spellFive1" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">2:</span>
+              <input type="text" class="form-control" id="spellFive2" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">3:</span>
+              <input type="text" class="form-control" id="spellFive3" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">4:</span>
+              <input type="text" class="form-control" id="spellFive4" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">5:</span>
+              <input type="text" class="form-control" id="spellFive5" />
+            </div>
+          </form>
+          <h4><a href="#sixth" role="button" id="toggleSixth">Sixth Level Spells:</a></h4>
+          <form class="sixth">
+            <div class="input-group">
+              <span class="input-group-addon">1:</span>
+              <input type="text" class="form-control" id="spellSix1" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">2:</span>
+              <input type="text" class="form-control" id="spellSix2" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">3:</span>
+              <input type="text" class="form-control" id="spellSix3" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">4:</span>
+              <input type="text" class="form-control" id="spellSix4" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">5:</span>
+              <input type="text" class="form-control" id="spellSix5" />
+            </div>
+          </form>
+          <h4><a href="#seventh" role="button" id="toggleSeventh">Seventh Level Spells:</a></h4>
+          <form class="seventh">
+            <div class="input-group">
+              <span class="input-group-addon">1:</span>
+              <input type="text" class="form-control" id="spellSeven1" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">2:</span>
+              <input type="text" class="form-control" id="spellSeven2" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">3:</span>
+              <input type="text" class="form-control" id="spellSeven3" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">4:</span>
+              <input type="text" class="form-control" id="spellSeven4" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">5:</span>
+              <input type="text" class="form-control" id="spellSeven5" />
+            </div>
+          </form>
+          <h4><a href="#eighth" role="button" id="toggleEighth">Eighth Level Spells:</a></h4>
+          <form class="eighth">
+            <div class="input-group">
+              <span class="input-group-addon">1:</span>
+              <input type="text" class="form-control" id="spellEight1" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">2:</span>
+              <input type="text" class="form-control" id="spellEight2" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">3:</span>
+              <input type="text" class="form-control" id="spellEight3" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">4:</span>
+              <input type="text" class="form-control" id="spellEight4" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">5:</span>
+              <input type="text" class="form-control" id="spellEight5" />
+            </div>
+          </form>
+          <h4><a href="#ninth" role="button" id="toggleNinth">Ninth Level Spells:</a></h4>
+          <form class="ninth">
+            <div class="input-group">
+              <span class="input-group-addon">1:</span>
+              <input type="text" class="form-control" id="spellNine1" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">2:</span>
+              <input type="text" class="form-control" id="spellNine2" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">3:</span>
+              <input type="text" class="form-control" id="spellNine3" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">4:</span>
+              <input type="text" class="form-control" id="spellNine4" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">5:</span>
+              <input type="text" class="form-control" id="spellNine5" />
+            </div>
+          </form>
+          <h3><a href="#spellSave" role="button" id="toggleSpellSave">Spell Save:</a></h3>
+          <form class="spellSave">
+            <div class="input-group">
+              <span class="input-group-addon">DC Mod:</span>
+              <input type="text" class="form-control" id="spellDCMod" />
+            </div>
+          </form>
+          <h3><a href="#spellFailure" role="button" id="toggleSpellFailure">Arcane Spell Failure:</a></h3>
+          <form class="spellFailure">
+            <div class="input-group">
+              <span class="input-group-addon">Percentage:</span>
+              <input type="text" class="form-control" id="arcaneFailure">
+            </div>
+          </form>
+          <h3><a href="#spellModifier" role="button" id="toggleSpellModifier">Conditional Spell Modifiers:</a></h3>
+          <form class="spellModifier">
+            <div class="input-group">
+              <span class="input-group-addon">Condition 1:</span>
+              <input type="text" class="form-control" id="spellModifier1" />
+            </div>
+            <div class="input-group">
+              <span class="input-group-addon">Condition 2:</span>
+              <input type="text" class="form-control" id="spellModifier2" />
+            </div>
+          </form>
+        </div>
+        <!-- /.md-col-6 spells section -->
+
+        <div class="col-md-6">
+          <h3><a href="#spellBook" role="button" id="toggleSpellBook">Spell Book:</a></h3>
+          <table class="spellBook">
+            <caption></caption>
+
+            <thead>
+              <tr>
+                <th><span class="spellBook">Known:</span></th>
+                <th><span class="spellBook">Save DC:</span></th>
+                <th><span class="spellBook"><center>Level:</center></span></th>
+                <th><span class="spellBook">Spells/<br>Day:</span></th>
+                <th><span class="spellBook">Bonus Spells:</span></th>
+
+              </tr>
+            </thead>
+
+            <tbody>
+              <tr>
+
+
+                <td>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="skill-app" />
+                  </div>
+                </td>
+                <td>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="skill-app-abil" />
+                  </div>
+                </td>
+                <td>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="skill-app-rank" />
+                  </div>
+                </td>
+                <td>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="skill-app-misc" />
+                  </div>
+                </td>
+                <td>
+                  <div class="input-group">
+                    <input type="text" class="form-control" id="skill-app-misc" />
+                  </div>
+                </td>
+              </tr>
+
+
+            </tbody>
+          </table>
+
+        </div>
+
+
+      </div>
+      <!-- /.subrow2 -->
+    </div>
+
+
+  </div>
+  <!-- /row1 -->
+  </div>
+  <!-- /.container -->
+
+
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+
+
+
+
+
+
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="js/bootstrap.min.js"></script>
+  </body>
+</html>
